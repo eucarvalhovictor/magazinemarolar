@@ -12,7 +12,7 @@ Site institucional e catálogo digital responsivo para a **Magazine Marolar**, t
 - **Tipografia:**
   - Títulos & Headings: `Fraunces` / `Montserrat`
   - Textos & Botões: `Poppins`
-- **Estilo:** Sem sombras pesadas (*shadow-free*), linhas puras e foco em clareza, confiança de bairro e pronta entrega.
+- **Estilo:** Sem sombras pesadas (*shadow-free*), linhas puras e foco em clareza, confiança de bairro, pronta entrega e montagem gratuita.
 
 ---
 
@@ -47,8 +47,9 @@ O projeto está 100% pronto para publicação estática contínua na Netlify:
 
 ---
 
-## 📍 Localização
+## 📍 Localização & Horário
 
 **Magazine Marolar**  
 Av. João Martins Coelho, 2423 – Jd. Santa Antonieta, Marília – SP  
+**Horário de Funcionamento:** Segunda a Sexta das 07:30 às 17:30 | Sábado das 08:00 às 16:00  
 WhatsApp: [(14) 99673-6648](https://wa.me/5514996736648)
