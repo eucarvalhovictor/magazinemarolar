@@ -805,6 +805,200 @@ button {
 }
 
 /* --------------------------------------------------------------------------
+   SEÇÃO INTEGRADA AO CATÁLOGO: TUDO EM MÓVEIS
+   -------------------------------------------------------------------------- */
+.catalog-everything-section {
+  margin-top: 56px;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--color-borda);
+  border-radius: var(--radius-none);
+  padding: 48px clamp(20px, 4vw, 48px);
+}
+
+.catalog-everything-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 36px;
+}
+
+.catalog-everything-eyebrow {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.catalog-everything-title {
+  font-family: var(--font-heading);
+  font-size: clamp(22px, 2.6vw, 32px);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.catalog-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.catalog-cat-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-borda-light);
+  border-radius: var(--radius-none);
+  padding: 24px 20px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color var(--transition-default), transform var(--transition-default), background-color var(--transition-default);
+}
+
+.catalog-cat-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+  background-color: #FFFFFF;
+}
+
+.catalog-cat-icon-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.catalog-cat-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  background-color: var(--bg-trust-bar);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-none);
+  transition: background-color var(--transition-default), color var(--transition-default);
+}
+
+.catalog-cat-card:hover .catalog-cat-icon {
+  background-color: var(--primary-color);
+  color: #FFFFFF;
+}
+
+.catalog-cat-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.catalog-cat-info h4 {
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+  transition: color var(--transition-default);
+}
+
+.catalog-cat-card:hover .catalog-cat-info h4 {
+  color: var(--primary-color);
+}
+
+.catalog-cat-info p {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.catalog-cat-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: auto;
+  transition: transform 150ms ease;
+}
+
+.catalog-cat-card:hover .catalog-cat-link {
+  transform: translateX(4px);
+}
+
+/* Faixa de Entregas, Região & Slogan */
+.catalog-everything-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-borda);
+}
+
+.catalog-highlights-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(16px, 3vw, 40px);
+}
+
+.catalog-highlight-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-borda);
+  padding: 12px 20px;
+  font-family: var(--font-heading);
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.catalog-highlight-badge svg {
+  color: var(--primary-color);
+  flex-shrink: 0;
+}
+
+.catalog-slogan-banner {
+  text-align: center;
+  background-color: var(--bg-trust-bar);
+  border: 1px dashed rgba(26, 94, 71, 0.35);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.catalog-slogan-brand {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: 0.5px;
+}
+
+.catalog-slogan-phrase {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-style: italic;
+}
+
+/* --------------------------------------------------------------------------
    DETALHES DE PRODUTOS NAS PÁGINAS DE CATEGORIA
    -------------------------------------------------------------------------- */
 .category-products-grid {
@@ -1605,6 +1799,11 @@ button {
     gap: 20px;
   }
   
+  .catalog-categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
   .category-products-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
@@ -1875,6 +2074,15 @@ button {
   .btn-furniro-outline {
     width: 100%;
   }
+
+  .catalog-highlights-row {
+    gap: 12px;
+  }
+  
+  .catalog-highlight-badge {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* Smartphones em Modo Retrato e Telas Pequenas (<= 576px) */
@@ -1890,6 +2098,31 @@ button {
 
   .section-header {
     margin-bottom: var(--space-xl);
+  }
+
+  .catalog-everything-section {
+    margin-top: 36px;
+    padding: 28px 16px;
+  }
+
+  .catalog-categories-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .catalog-cat-card {
+    padding: 18px 16px;
+  }
+
+  .catalog-cat-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .catalog-slogan-banner {
+    padding: 14px 16px;
+    flex-direction: column;
+    gap: 4px;
   }
 
   .products-furniro-grid {
