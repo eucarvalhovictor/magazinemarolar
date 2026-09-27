@@ -1,0 +1,6 @@
+# robots.txt for Magazine Marolar
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://magazinemarolar.com.br/sitemap.xml
