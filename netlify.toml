@@ -1,6 +1,31 @@
 [build]
   publish = "."
 
+# HTML: sem cache longo para o Google ver as mudanças de SEO logo após o deploy
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Categorias (HTML em subpasta)
+[[headers]]
+  for = "/categorias/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Sitemap e robots: sempre frescos para o Search Console
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Content-Type = "application/xml; charset=utf-8"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Content-Type = "text/plain; charset=utf-8"
+
 [[headers]]
   for = "/public/*"
   [headers.values]

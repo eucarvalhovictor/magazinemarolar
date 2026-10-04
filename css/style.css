@@ -2253,3 +2253,11 @@ button {
     height: 200px;
   }
 }
+
+/* SEO local Marilia */
+#moveis-em-marilia .seo-columns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+#moveis-em-marilia details { background: #fff; border: 1px solid var(--color-borda); padding: 14px 16px; }
+#moveis-em-marilia summary { font-family: var(--font-heading); font-size: 15px; }
+@media (max-width: 768px) {
+  #moveis-em-marilia .seo-columns { grid-template-columns: 1fr; }
+}
