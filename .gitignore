@@ -1,0 +1,7 @@
+.DS_Store
+.system_generated
+.tempmediaStorage
+scratch/
+*.log
+.vscode/
+.idea/
